@@ -1,5 +1,5 @@
 // HW1 playground 
-// Swift basics
+// Cookie party
 // CS112 HW1
 // Max Luttrell, City College of San Francisco
 //
