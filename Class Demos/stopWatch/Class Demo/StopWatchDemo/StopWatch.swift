@@ -19,7 +19,7 @@ class StopWatch {
         startTime = Date()
     }
     
-    // stop - stop the watch, i.e. set startTime back to nil
+    // stop() - stop the watch, i.e. set startTime back to nil
     func stop() {
         print("Stopwatch Stop.  Elapsed time: \(elapsedTime())")
         startTime = nil

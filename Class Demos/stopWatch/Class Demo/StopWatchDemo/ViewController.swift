@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         }
     }
 
-    func updateElapsedTime() {
+    @objc func updateElapsedTime() {
         print("updateElapsedTime called")
         timeLabel.text = String(watch.elapsedTime())
     }
