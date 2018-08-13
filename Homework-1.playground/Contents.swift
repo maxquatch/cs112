@@ -12,15 +12,18 @@ import UIKit
 // named numFriends.  don't change this line.  you should see a random number between 1 and 
 // 20 on the right panel of the playground (it might take a little while to appear when you
 // first load this playground).  to get a new random number, you can select
-// Editor -> Execute Playground.  also, any time you add or remove some code to the 
-// playground, you should get a new random number.
+// Editor -> Execute Playground, or hit the "play" button towards the bottom of this
+// window.  also, any time you add or remove some code to the playground, you should get
+// a new random number.
 let numFriends = Int(arc4random() % 20) + 1
 
 // 1.  using let, create a constant called numCookiesEach and set it to 3
 
 // 2.  our friends want more cookies!  add a line below to change numCookiesEach to 4.  notice 
 // how you get an Xcode error.
-// how can you fix your answer to part 1 so that it works?  Make this change in part 1.
+// how can you fix your answer to part 1 so that it works?  Do two things:
+// - make a change above, in part 1, so that you can change numCookiesEach
+// - add some code below to change numCookiesEach to 4
 
 // 3.  we need to know how many cookies we need in total.  create a new constant called
 // totalCookies which stores the total, i.e. numFriends * numCookiesEach
