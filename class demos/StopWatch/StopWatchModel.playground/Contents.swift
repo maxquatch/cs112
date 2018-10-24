@@ -1,4 +1,6 @@
-//: Playground - noun: a place where people can play
+//: StopWatch model class
+// Max Luttrell
+// CS112
 
 import Foundation
 
@@ -26,11 +28,20 @@ class StopWatch {
             return startTime!.timeIntervalSinceNow * -1
         }
     }
+    
+    func isRunning() -> Bool {
+        if startTime == nil {
+            return false
+        } else {
+            return true
+        }
+    }
 }
 
 var watch = StopWatch()
-watch.elapsedTime()
+print("elapsed time: \(watch.elapsedTime())")
 watch.start()
+print("isRunning: \(watch.isRunning())")
 sleep(1)
 print("elapsed time: \(watch.elapsedTime())")
 sleep(1)
@@ -38,4 +49,4 @@ print("elapsed time: \(watch.elapsedTime())")
 sleep(1)
 print("elapsed time: \(watch.elapsedTime())")
 watch.stop()
-
+print("isRunning: \(watch.isRunning())")
