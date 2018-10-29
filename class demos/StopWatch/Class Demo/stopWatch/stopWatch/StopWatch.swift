@@ -1,6 +1,10 @@
-//: StopWatch model class
-// Max Luttrell
-// CS112
+//
+//  StopWatch.swift
+//  stopWatch
+//
+//  Created by Max Luttrell on 10/29/18.
+//  Copyright © 2018 Max Luttrell. All rights reserved.
+//
 
 import Foundation
 
@@ -24,29 +28,19 @@ class StopWatch {
         if startTime == nil {
             return 0
         } else {
-        // if running, return the current time - the startTime
-            return startTime!.timeIntervalSinceNow * -1
+            // if running, return the current time - the startTime
+            //            return startTime!.timeIntervalSinceNow * -1
+            return -startTime!.timeIntervalSinceNow
         }
     }
     
     func isRunning() -> Bool {
-        if startTime == nil {
-            return false
-        } else {
-            return true
-        }
+        //        if startTime == nil {
+        //            return false
+        //        } else {
+        //            return true
+        //        }
+        return startTime != nil
     }
 }
 
-var watch = StopWatch()
-print("elapsed time: \(watch.elapsedTime())")
-watch.start()
-print("isRunning: \(watch.isRunning())")
-sleep(1)
-print("elapsed time: \(watch.elapsedTime())")
-sleep(1)
-print("elapsed time: \(watch.elapsedTime())")
-sleep(1)
-print("elapsed time: \(watch.elapsedTime())")
-watch.stop()
-print("isRunning: \(watch.isRunning())")
